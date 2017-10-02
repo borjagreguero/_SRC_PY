@@ -214,9 +214,129 @@ areas.reverse()
 # Print out areas
 print(areas)
 
-conda install scipy=0.15.0
+import scipy 
+import numpy 
+numpy.array([1,2,3])
+import numpy as np 
+np.array([1, 2, 3])
+from numpy import array 
+
+# Definition of radius
+r = 0.43
+
+# Import the math package
+import math 
+# Calculate C
+C = 2*math.pi * r
+# Calculate A
+A = math.pi * r**2
+# Build printout
+print("Circumference: " + str(C))
+print("Area: " + str(A))
+
+# Definition of radius
+r = 192500
+
+# Import radians function of math package
+from math import radians 
+# Travel distance of Moon over 12 degrees. Store in dist.
+dist = r * radians(12)
+# Print out dist
+print(dist)
+
+# Create list baseball
+baseball = [180, 215, 210, 210, 188, 176, 209, 200]
+
+# Import the numpy package as np
+import numpy as np 
+# Create a numpy array from baseball: np_baseball
+np_baseball=np.array(baseball)
+# Print out type of np_baseball
+print(type(np_baseball))
+
+# height is available as a regular list
+
+# Import numpy
+#import numpy as np
+# Create a numpy array from height: np_height
+np_height = np.array(height)
+# Print out np_height
+print(np_height)
+# Convert np_height to m: np_height_m
+np_height_m = np_height * 0.0254
+# Print np_height_m
+print(np_height_m)
+
+# height and weight are available as a regular lists
 
 
+# Create array from height with correct units: np_height_m
+np_height_m = np.array(height) * 0.0254
+# Create array from weight with correct units: np_weight_kg
+np_weight = np.array(weight) 
+np_weight_kg = np_weight*0.453592
+# Calculate the BMI: bmi
+bmi = np_weight_kg / np_height_m **2
+# Print out bmi
+print(bmi)
 
+# height and weight are available as a regular lists
+
+
+# subsetting in numpy 
+x = [4 , 9 , 6, 3, 1]
+x[1]
+import numpy as np
+y = np.array(x)
+y[1]
+
+high = y > 5
+y[high]
+
+# height and weight are available as a regular lists
+
+# Calculate the BMI: bmi
+np_height_m = np.array(height) * 0.0254
+np_weight_kg = np.array(weight) * 0.453592
+bmi = np_weight_kg / np_height_m ** 2
+# Create the light array
+light = np.array(bmi<21)
+# Print out light
+print(light)
+# Print out BMIs of all baseball players whose BMI is below 21
+print(bmi[light])
+
+
+np.array([True, 1, 2]) + np.array([3, 4, False])
+
+x = ["a", "b", "c"]
+x[1]
+np_x = np.array(x)
+np_x[1]
+
+# Import numpy
+import numpy as np
+# Store weight and height lists as numpy arrays
+np_weight = np.array(weight)
+np_height = np.array(height)
+# Print out the weight at index 50
+print(np_weight[50])
+# Print out sub-array of np_height: index 100 up to and including index 110
+print(np_height[100:111])
+
+
+# 2D ARRAYS - MULTI DIMS
+# Create baseball, a list of lists
+baseball = [[180, 78.4],
+            [215, 102.7],
+            [210, 98.5],
+            [188, 75.2]]
+
+# Create a 2D numpy array from baseball: np_baseball
+np_baseball = np.array(baseball)
+# Print out the type of np_baseball
+print(type(np_baseball))
+# Print out the shape of np_baseball
+print(np_baseball.shape)
 
 
